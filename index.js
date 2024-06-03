@@ -42,7 +42,7 @@ app.post('/generate-pdf1', (req, res) => {
     const today = currentDate.toLocaleDateString('en-GB', {
         day: '2-digit',
         month: '2-digit',
-        year: '2-digit'
+        year: 'numeric'
     }).replace(/ /g, '-');
     orderData['today']=today
     const tempArray = orderData['today'].split("/")
@@ -85,7 +85,7 @@ app.post('/generate-pdf2', (req, res) => {
     const formattedDate = date.toLocaleDateString('en-GB', {
         day: '2-digit',
         month: '2-digit',
-        year: '2-digit'
+        year: 'numeric'
     }).replace(/ /g, '-');
     orderData['fee-paid-date'] = formattedDate;
     // Get the current date
@@ -93,7 +93,7 @@ app.post('/generate-pdf2', (req, res) => {
     const today = currentDate.toLocaleDateString('en-GB', {
         day: '2-digit',
         month: '2-digit',
-        year: '2-digit'
+        year: 'numeric'
     }).replace(/ /g, '-');
     orderData['today'] = today
     const tempArray = orderData['today'].split("/")
@@ -132,7 +132,7 @@ app.post('/generate-pdf3', (req, res) => {
     const formattedDate = date.toLocaleDateString('en-GB', {
         day: '2-digit',
         month: '2-digit',
-        year: '2-digit'
+        year: 'numeric'
     }).replace(/ /g, '-');
     orderData['Items-Purchased-date'] = formattedDate;
     // Get the current date
@@ -140,7 +140,7 @@ app.post('/generate-pdf3', (req, res) => {
     const today = currentDate.toLocaleDateString('en-GB', {
         day: '2-digit',
         month: '2-digit',
-        year: '2-digit'
+        year: 'numeric'
     }).replace(/ /g, '-');
     orderData['today'] = today
     const tempArray = orderData['today'].split("/")
